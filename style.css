@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 *,
 ::before,
@@ -14,4 +14,102 @@ a,
 li {
   list-style: none;
   text-decoration: none;
+}
+
+/* Header Section */
+
+#header-img {
+  background: url(https://source.unsplash.com/qZenO_gQ7QA) center/cover
+    no-repeat;
+  /* above is shorthand for all below */
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+  animation: anime 2s ease-in-out;
+}
+
+header {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  position: relative;
+  color: red;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #665;
+}
+
+.header-text {
+  display: flex;
+  flex: 0 1 40vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  height: 50vh;
+  animation: anime 2s ease-in-out;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: 1px #ddd solid;
+  outline: none;
+  margin-top: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+}
+
+.btn a,
+.btn i {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+/* Services */
+img {
+  display: block;
+  width: 100%;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.service-title {
+  width: 35%;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+#Services-title {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
 }
